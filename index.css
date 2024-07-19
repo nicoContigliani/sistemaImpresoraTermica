@@ -1,0 +1,274 @@
+body {
+    font-family: 'Lora', serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Incluye padding y border en el cálculo del ancho y alto */
+    overflow: hidden;
+    /* Previene que el contenido se desborde fuera del body */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    margin: 0;
+    /* Elimina márgenes predeterminados para encabezados */
+}
+
+/* General Title Section */
+.generalTittle {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centra horizontalmente los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    padding: 1%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Canvas Styling */
+#myCanvas {
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    background-color: #fff;
+    width: 100%;
+    /* Asegura que el canvas se ajuste al ancho del contenedor */
+    max-width: 600px;
+    /* Máximo ancho para evitar que sea demasiado grande */
+    height: auto;
+    /* Ajusta la altura automáticamente para mantener la proporción */
+    margin: auto;
+    /* Centra el canvas dentro de su contenedor */
+}
+
+/* Input and Button Styling */
+.input-button {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    /* padding-left: 1%;
+    padding-right: 2%; */
+}
+
+input,
+textarea {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 0.5em;
+    width: 100%;
+    /* Asegura que el input se ajuste al ancho del contenedor */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1890ff;
+    outline: none;
+}
+
+/* Button Styling */
+.buttonGeneratorContainer {
+    margin: 1%;
+}
+
+.buttonGenerator {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    background-color: #1890ff;
+    color: #fff;
+    border: 1px solid #1890ff;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1.5;
+    width: auto;
+    /* Asegura que el ancho del botón se ajuste al contenido */
+    max-width: 200px;
+    /* Ancho máximo del botón */
+}
+
+.buttonGenerator:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.buttonGenerator:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Image Styling */
+#flippedImage {
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    background-color: #fff;
+    width: 100%;
+    /* Asegura que la imagen se ajuste al ancho del contenedor */
+    max-width: 600px;
+    /* Máximo ancho para evitar que sea demasiado grande */
+    height: auto;
+    /* Ajusta la altura automáticamente para mantener la proporción */
+    margin: auto;
+    /* Centra la imagen dentro de su contenedor */
+}
+
+.floating-share-button {
+    position: fixed;
+    bottom: 50px;
+    /* Distancia desde el fondo de la ventana */
+    right: 20px;
+    /* Distancia desde el borde derecho de la ventana */
+    background-color: #1890ff;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    border-radius: 50%;
+    /* Botón redondo */
+    width: 50px;
+    /* Ancho del botón */
+    height: 50px;
+    /* Alto del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 24px;
+    /* Tamaño del ícono */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+    z-index: 1000;
+    /* Asegura que el botón esté por encima de otros elementos */
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.floating-share-button:hover {
+    background-color: #40a9ff;
+    /* Color de fondo en hover */
+}
+
+.floating-share-button:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.floating-share-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.floating-share-button i {
+    /* Agrega el ícono aquí si estás usando FontAwesome */
+}
+
+.buttonDownload{
+    display: flex;
+    justify-content: center;
+    /* Alinea los elementos horizontalmente en el centro */
+    align-items: center;
+    position: fixed;
+}
+
+
+/* Footer Styling */
+.foot {
+    display: flex;
+    justify-content: center;
+    /* Alinea los elementos horizontalmente en el centro */
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1000;
+    /* Asegura que el pie de página esté por encima de otros elementos */
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    background-color: #fff;
+    /* Fondo blanco para mejor contraste */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .generalTittle {
+        flex-direction: column;
+        align-items: center;
+        /* Cambia a centrado en pantallas más pequeñas */
+        font-size: 24px;
+        /* Ajusta el tamaño de fuente */
+        padding-bottom: 1%;
+        padding-top: 3%;
+    }
+
+    .generalSubTittle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        /* Cambia a centrado en pantallas más pequeñas */
+        font-size: 15px;
+        /* Ajusta el tamaño de fuente */
+        padding-bottom: 1%;
+        padding-top: 3%;
+    }
+
+
+
+    input,
+    textarea {
+        padding: 0.75em;
+    }
+
+    .buttonGenerator {
+        width: 100%;
+        padding: 0.75em;
+    }
+
+    .foot {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 374px) {
+    .buttonGenerator {
+        font-size: 14px;
+        padding: 0.5em;
+    }
+
+    .generalTittle {
+        padding: 0.5%;
+    }
+
+    .input-button {
+        padding-bottom: 5%;
+    }
+}

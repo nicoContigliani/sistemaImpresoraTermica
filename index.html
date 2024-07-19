@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  
+    <br>
+    <div class="generalTittle">
+        Sistem Impresora Térmica
+    </div>
+    <div class="generalSubTittle">
+        v 1.0.0
+    </div>
+    <br>
+    <div class="input-button">
+        <div class="input">
+            <input type="text" id="textInput" placeholder="Enter text" />
+        </div>
+        <div class="buttonGeneratorContainer">
+            <button class="buttonGenerator" onclick="flipImage()">Generar Número</button>
+        </div>
+    </div>
+    <div class="initialImage">
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+    </div>
+    <div class="resultImage">
+        <img id="flippedImage" src="" alt="Flipped Image" />
+    </div>
+<div class="buttonDownload">
+    <button class="buttonGenerator" id="downloadFlippedButton">Descargar Imagen Volteada</button> <!-- Botón para descargar la imagen volteada -->
+</div>
+
+    <div class="foot">
+        nico.contigliani@gmail.com
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
