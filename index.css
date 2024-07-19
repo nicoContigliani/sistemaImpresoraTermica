@@ -190,11 +190,14 @@ textarea:focus {
 }
 
 .buttonDownload{
+    padding-top: 1%;
+    padding-left: 25%;
     display: flex;
     justify-content: center;
     /* Alinea los elementos horizontalmente en el centro */
     align-items: center;
     position: fixed;
+
 }
 
 
