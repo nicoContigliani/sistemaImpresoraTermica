@@ -96,6 +96,6 @@ window.onload = function() {
     drawOnCanvas('12'); // Dibuja el texto inicial
     flipImage();
     document.getElementById('textInput').addEventListener('input', updateText);
-    document.getElementById('downloadButton').addEventListener('click', downloadImage);
+    // document.getElementById('downloadButton').addEventListener('click', downloadImage);
     document.getElementById('downloadFlippedButton').addEventListener('click', downloadFlippedImage); // Añade el manejador de eventos
 };
